@@ -24,7 +24,7 @@ function App() {
       <div className='flex bg-gray-100 min-h-screen'>
         <TypedSidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         <div className='flex-1 flex flex-col'>
-          <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+          <Header setSidebarOpen={setSidebarOpen} />
           <main className='flex-1 p-4 md:p-6'>
             <Routes>
               <Route path='/' element={<Dashboard />} />
