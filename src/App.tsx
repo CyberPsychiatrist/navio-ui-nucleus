@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import { Toaster } from 'sonner';
 import { Sidebar, MobileNav } from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
-import Lessons from './pages/Lessons';
+import RiskIndicator from './pages/RiskIndicator';
+import AIAnalyzer from './pages/AIAnalyzer';
 
 export default function App() {
   return (
@@ -20,7 +21,8 @@ export default function App() {
           <main className='flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6'>
             <Routes>
               <Route path='/' element={<Dashboard />} />
-              <Route path='/lessons' element={<Lessons />} />
+              <Route path='/risk-indicator' element={<RiskIndicator />} />
+              <Route path='/ai-analyzer' element={<AIAnalyzer />} />
             </Routes>
           </main>
         </div>

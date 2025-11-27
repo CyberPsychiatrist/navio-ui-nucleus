@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom';
-import { Home, BookOpen, PanelLeft } from 'lucide-react';
+import { Home, BookOpen, PanelLeft, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const navItems = [
   { label: 'Dashboard', to: '/', icon: <Home className='h-5 w-5' /> },
-  { label: 'Lessons', to: '/lessons', icon: <BookOpen className='h-5 w-5' /> },
+  { label: 'Risk Indicator', to: '/risk-indicator', icon: <BookOpen className='h-5 w-5' /> },
+  { label: 'AI Analyzer', to: '/ai-analyzer', icon: <ShieldCheck className='h-5 w-5' /> },
 ];
 
 function NavLinks() {
