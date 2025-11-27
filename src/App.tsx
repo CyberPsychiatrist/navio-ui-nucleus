@@ -4,6 +4,7 @@ import { Sidebar, MobileNav } from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import RiskIndicator from './pages/RiskIndicator';
 import AIAnalyzer from './pages/AIAnalyzer';
+import PanicInfo from './pages/PanicInfo'; // Import the new page
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
               <Route path='/' element={<Dashboard />} />
               <Route path='/risk-indicator' element={<RiskIndicator />} />
               <Route path='/ai-analyzer' element={<AIAnalyzer />} />
+              <Route path='/panic-info' element={<PanicInfo />} /> {/* Add the new route */}
             </Routes>
           </main>
         </div>
