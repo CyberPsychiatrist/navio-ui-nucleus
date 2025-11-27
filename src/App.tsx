@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div className='flex bg-gray-100 min-h-screen'>
-        <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+        <Sidebar setSidebarOpen={setSidebarOpen} />
         <div className='flex-1 flex flex-col'>
           <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
           <main className='flex-1 p-4 md:p-6'>
