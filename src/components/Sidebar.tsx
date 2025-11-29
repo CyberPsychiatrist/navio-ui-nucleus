@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Shield, BrainCircuit, HeartPulse, Handshake, X } from 'lucide-react';
+import { Home, Shield, BrainCircuit, HeartPulse, Handshake, MessageSquare, X } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Dashboard', icon: Home },
@@ -7,6 +7,7 @@ const navLinks = [
   { href: '/ai-analyzer', label: 'AI Analyzer', icon: BrainCircuit },
   { href: '/panic-info', label: 'Panic Info', icon: HeartPulse },
   { href: '/partnerships', label: 'Partnerships', icon: Handshake },
+  { href: '/forums', label: 'Forums', icon: MessageSquare },
 ];
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {

@@ -280,14 +280,22 @@ const QuizModal = ({ quiz, isOpen, onClose, onComplete }) => {
   const [timeElapsed, setTimeElapsed] = useState(0);
 
   useEffect(() => {
-    if (isOpen && startTime === null) {
-      setStartTime(Date.now());
-      const timer = setInterval(() => {
-        setTimeElapsed(Math.floor((Date.now() - startTime) / 1000));
-      }, 1000);
-      return () => clearInterval(timer);
+    let timer;
+    if (isOpen) {
+      const startTimeValue = Date.now();
+      setStartTime(startTimeValue);
+      
+      timer = setInterval(() => {
+        setTimeElapsed(Math.floor((Date.now() - startTimeValue) / 1000));
+      }, 100);
+    } else {
+      setTimeElapsed(0);
     }
-  }, [isOpen, startTime]);
+    
+    return () => {
+      if (timer) clearInterval(timer);
+    };
+  }, [isOpen]);
 
   if (!isOpen) return null;
 

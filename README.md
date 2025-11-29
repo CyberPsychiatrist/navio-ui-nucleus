@@ -97,6 +97,20 @@ The template includes dark mode support through Tailwind's `dark:` classes and C
 
 Feel free to submit issues and enhancement requests!
 
+## 👥 Collaborators
+
+This project is made possible by the dedicated team of contributors who work together to create and maintain this digital safety platform:
+
+- **Project Lead**: [Humphrey Maina] - Overall project coordination and vision
+- **UI/UX Design**: [Fabiola Mukanzi] - User interface and experience design
+- **Frontend Development**: [Humphrey Maina] - React/Vite/TypeScript implementation
+- **Backend Development**: [Vladimir Brenn Gabiro] - Server-side logic and API integration
+- **Content Creation**: [Diana Kemunto] - Educational content and quiz development
+- **Quality Assurance**: [Vladimir Brenn Gabiro] - Testing and bug fixing
+- **Documentation**: [Diana Kemunto] - Technical documentation and guides
+
+We welcome contributions from the community! Please check our contributing guidelines for more information on how to get involved.
+
 **⚡ Powered by [Dala](https://dala.gebeya.com)** - The AI-powered web development platform that helps you build full-stack applications faster.
 
 ---

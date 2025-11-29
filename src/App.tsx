@@ -6,6 +6,7 @@ import RiskIndicator from './pages/RiskIndicator';
 import AIAnalyzer from './pages/AIAnalyzer';
 import PanicInfo from './pages/PanicInfo';
 import PartnershipsPage from './pages/Partnerships';
+import ForumsPage from './pages/Forums';
 import { Toaster } from 'sonner';
 import Header from './components/Header';
 
@@ -31,6 +32,7 @@ function App() {
               <Route path='/ai-analyzer' element={<AIAnalyzer />} />
               <Route path='/panic-info' element={<PanicInfo />} />
               <Route path='/partnerships' element={<PartnershipsPage />} />
+              <Route path='/forums' element={<ForumsPage />} />
             </Routes>
           </main>
         </div>
